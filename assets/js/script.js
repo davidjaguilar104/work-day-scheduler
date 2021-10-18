@@ -1,7 +1,3 @@
-$(document).ready(function () {
-// var hourBlock = $("div").addClass("col hour");
-// var textArea = $("textarea").addClass("col-10 description");
-// var button = $("button").addClass("col saveBtn");
 var times = {
     "9AM": "",
     "10AM": "",
@@ -47,6 +43,4 @@ $(document).ready(function() {
 
     var currentDayText = moment().format("[today is ]MMMM DD, YYYY");
     $("#currentDay").text(currentDayText);
-});
-
 });
