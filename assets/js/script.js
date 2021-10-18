@@ -38,7 +38,7 @@ $(document).ready(function() {
         var button = $("<button>").addClass("col saveBtn").append(icon);
 
         $(button).on("click", function() {
-            localStorage.setItem(key, textarea.val);
+            localStorage.setItem(key, textarea.val());
         });
 
         timeBlock.append(button);
@@ -49,7 +49,4 @@ $(document).ready(function() {
     $("#currentDay").text(currentDayText);
 });
 
-Object.keys(times).forEach(function(key) {
-    var timeBlock = $("<div>" + key + "</div>").addClass("row time-block")
-});
 });
